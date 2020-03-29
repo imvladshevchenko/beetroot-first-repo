@@ -1,91 +1,114 @@
 * {
-    font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: all .1s ease-in;
+  font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
 }
 body {
-    text-align: center;
-    min-height: 100vh;
-    background-color: #3B3F45;
-    border: 30px solid white
+  text-align: center;
+  min-height: 100vh;
+  background-color: #3b3f45;
+  border: 30px solid white;
 }
 .header {
-    padding: 30px;
-    background-color: #4A4F56;
+  padding: 30px;
+  background-color: #4a4f56;
+  margin-bottom: 30px;
 }
 header * {
-    color: #EB7E7F;
-    padding: 5px;
+  color: #eb7e7f;
 }
-h1 {  
-    font-size: 36px;
+h1 {
+  font-size: 36px;
 }
 h4 {
-    font-size: 24px;
+  font-size: 24px;
+}
 
+form {
+  max-width: 50%;
+  margin: auto;
 }
 
 .main {
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    
+  text-align: left;
 }
 
-[type="checkbox"]:checked + label { 
-    text-decoration: line-through;
-    color: #9CA0B5; 
+[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #9ca0b5;
 }
 
-
-main * {
-    font-size: 30px;
-    color: white;
-    padding: 25px;
+div {
+  color: white;
+  cursor: pointer;
 }
 div:nth-of-type(odd) {
-    background-color: #88839E;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  background-color: #88839e;
 }
 div:nth-of-type(even) {
-    background-color: #7A7593;
+    border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  background-color: #7a7593;
 }
+input,
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 input {
-    zoom: 2;
+  zoom: 2;
 }
-span  {
-    padding: 3px;
-    font-size: 16px;
+label {
+  padding: 15px;
+  display: block;  
+}
+span {
+  vertical-align: middle;
+}
+.main_span {
+    font-size: 30px;
+}
+ 
+.sec_span {
+  font-size: 16px;
 }
 .shoping_list {
-    list-style-type: none;
+  list-style-type: none;
 }
+
+.last_div {
+  margin-bottom: 30px;
+}
+
 .buttom {
-    color: #EB7E7F;
-    background-color: #4A4F56;
-    border: 0;
-    outline: none;
-    margin-top: 5%;
-    width: 100%;
+  color: #eb7e7f;
+  background-color: #4a4f56;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
 }
-
-
 
 div:hover {
-    background-color: #625E77;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+  background-color: #625e77;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
 }
 div:active {
-    background-color: #D8827B;
+  background-color: #d8827b;
 }
 .buttom:hover {
-    background-color: grey;
-    opacity: 1;
- }
+  background-color: grey;
+  opacity: 1;
+}
 
- .buttom:active {
-     opacity: 0.6;
- }
+.buttom:active {
+  opacity: 0.6;
+}
