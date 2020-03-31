@@ -32,6 +32,7 @@ form {
 }
 
 .main {
+  list-style: none;
   text-align: left;
 }
 
@@ -40,16 +41,16 @@ form {
   color: #9ca0b5;
 }
 
-div {
+li {
   color: white;
   cursor: pointer;
 }
-div:nth-of-type(odd) {
+li:nth-of-type(odd) {
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   background-color: #88839e;
 }
-div:nth-of-type(even) {
+li:nth-of-type(even) {
     border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   background-color: #7a7593;
@@ -81,7 +82,7 @@ span {
   list-style-type: none;
 }
 
-.last_div {
+.last_li {
   margin-bottom: 30px;
 }
 
@@ -95,13 +96,13 @@ span {
   cursor: pointer;
 }
 
-div:hover {
+li:hover {
   background-color: #625e77;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 
 }
-div:active {
+li:active {
   background-color: #d8827b;
 }
 .buttom:hover {
