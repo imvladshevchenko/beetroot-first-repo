@@ -1,149 +1,106 @@
+:root {
+  --small-width: 25%;
+  --large-width: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.1s ease-in;
 }
-html,
-body {
+body, html {
   font-size: 100%;
-}
-body {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: white;
-  font-size: 16px;
-  background-color: #2b81ac;
-  margin: 25px;
-}
-h1 {
-    position: fixed;
-    top: 150px;
-    left: 28%;
-    
-}
-.weather_forecast {
-  background-color: #3399cc;
-  height: 1250px;
-}
-.weather_table {
-  position: fixed;
-  bottom: 25%;
-  left: 27%;
-  width: 50%;
-}
-.weather_list {
-  text-align: center;
-  list-style-type: none;
-  font-size: 0;
-}
-.weather_list li {
-  display: inline-block;
-  font-size: 34px;
-}
-.case1,
-.case2,
-.case3,
-.case4,
-.case5,
-.case6,
-.case7,
-.case8,
-.case9,
-.case10,
-.case11 {
-  opacity: 0.6;
-  padding: 40px;
+  height: 100%;
 }
 
-.case1:hover,
-.case2:hover,
-.case3:hover,
-.case4:hover,
-.case5:hover,
-.case6:hover,
-.case7:hover,
-.case8:hover,
-.case9:hover,
-.case10:hover,
-.case11:hover {
-  opacity: 1;
+body {
+  background-color: #3399CC;
+  border: 25px solid #2B81AC;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
 }
-.case1 {
-    border: 6px solid white;
-    border-bottom: 1px;
-    border-right: 0px;
-    width: 50%;
-  }
-.case2 {
-  background-color: #33cccc;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 1px;
-  width: 25%;
+.weather__forecast {
+  padding-top: 10%;
+  margin: 0 auto;
+  width: 50%;
+
 }
-.case3 {
-  background-color: #996699;
-  border: 6px solid white;
-  border-bottom: 0px;
-  width: 25%;
-}
-.case4 {
-  background-color: #c24747;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 0px;
-  width: 25%;
-}
-.case5 {
-  background-color: #e2674a;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 0px;
-  width: 25%;
-}
-.case6 {
-  background-color: #ffcc66;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 0px;
-  width: 25%;
-}
-.case7 {
-  background-color: #99cc99;
-  border: 6px solid white;
-  border-bottom: 0px;
-  width: 25%;
-}
-.case8 {
-  background-color: #669999;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 0px;
-  width: 33%;
-}
-.case9 {
-  background-color: #cc6699;
-  border: 6px solid white;
-  border-bottom: 0px;
-  border-right: 0px;
-  width: 33%;
-}
-.case10 {
-  background-color: #339966;
-  border: 6px solid white;
-  border-bottom: 0px;
-  width: 34%;
-}
-.case11 {
-  background-color: #666699;
-  border:6px solid white;
+.weather__table {
+  border: 5px solid white;
+  font-size: 0;
   width: 100%;
-  margin: 0px;
+  list-style: none;
+  
+}
+li {
+  font-size: 26px;
+  display: inline-block;
+  text-align: center;
+  border: 5px solid white ;
+  padding: 25px;
+}
+.weather__table__case-lisbon,
+.weather__table__case-sanfrancisco {
+  width: var(--large-width);
+
+}
+
+.weather__table__case-paris, 
+.weather__table__case-belgrade,
+.weather__table__case-moscow, 
+.weather__table__case-telaviv, 
+.weather__table__case-cair, 
+.weather__table__case-newyork,
+.weather__table__case-newdelphi,
+.weather__table__case-tokyo {
+  width: var(--small-width);
+}
+
+.weather__table__case-sydney {
+  width: 100%;
+}
+
+.weather__table__case-paris {
+  background-color: #33CCCC;
+}
+.weather__table__case-belgrade {
+background-color: #996699;
+}
+.weather__table__case-moscow {
+background-color: #C24747;
+}
+.weather__table__case-telaviv {
+background-color: #E2674A;
+}
+.weather__table__case-cair {
+background-color: #FFCC66;
+}
+.weather__table__case-newyork {
+background-color: #99CC99;
+}
+.weather__table__case-newdelphi {
+background-color: #669999;
+}
+.weather__table__case-sanfrancisco {
+background-color: #CC6699;
+}
+.weather__table__case-tokyo {
+background-color: #339966;
+}
+.weather__table__case-sydney {
+background-color: #666699;
+}
+
+ul:hover li {
+  opacity: 0.6;
+}
+ul li:hover {
+  opacity: 1;
 }
 
 p {
-    position: fixed;
-    bottom: 280px;
-    left: 700px;
-    font-size: 24px;
+  font-size: 26px;
+  margin: 0 auto;
+  width: 50%;
 }
