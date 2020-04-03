@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Miso Bold";
+  src: url("../assets/fonts/miso-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("../assets/fonts/Lato-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bold-font: "Miso Bold", serif;
+    --text-font: "Lato Light", serif;
+    --bg-layer: #E0B265; 
+    --price-color: #02995B;
+    --text-color: #333333;
+    --white: #fff;
+    --bronze: #FF7900;
+    --gold: #FFCA28;
+    --silver: #BDBDBD;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 100%;
+    height: 100%;
+    background-color: var(--bg-layer);
+    transition: all 0.3s ease-in;
+}
+
+.cups {
+    display: flex;
+    
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.cups__price-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    
+    
+}
+
+li {
+    display: flex;
+    background-color: var(--white);
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 440px;
+    padding: 30px;
+    margin-right: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    
+}
+
+.cups__price-list__golden {
+    height: 500px;
+    padding-top: 50px;
+}
+
+.img__golden_cup {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cups__price-list__golden__price {
+    font-family: var(--bold-font);
+    color: var(--price-color);
+    font-size: 70px;
+}
+img {
+    width: 135px;
+    height: 135px;
+}
+
+.cups__price-list__golden__cup-name {
+    font-family: var(--bold-font);
+    font-size: 56px;
+}
+
+
+.cups__price-list__golden__cup-description {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    width: 75%;
+    text-align: center;
+    font-size: 30px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
