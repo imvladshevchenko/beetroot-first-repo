@@ -67,7 +67,7 @@ li {
 .blog-section__list__item1 {
   width: 740px;
   height: 540px;
-  background: url(/assets/images/Layer\ 8@1X.png);
+  background-image: url(/assets/images/bg.png);
   position: relative;
 }
 
