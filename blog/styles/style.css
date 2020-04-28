@@ -134,7 +134,7 @@ a {
 
 }
 
-.blog-section_description_item1_link {
+.blog-section_description__item1_link {
     font-size: var(--big-title-size);
     width: 433px;
     color: var(--white);
