@@ -1,24 +1,3 @@
-// alert('hello');
-
-// alert(3 + 5);
-
-// prompt("what is your name?");
-
-// const NAME = prompt("what is your name?");
-
-
-// let number = 15;
-
-// let string = "vasya";
-
-// const CONSTANT = "value cant be changed";
-
-// number = 4
-
-// CONSTANT = 4;
-
-// console.log(CONSTANT);
-
 // 1
 // const NAME = prompt("Как тебя зовут?");
 
