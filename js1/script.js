@@ -71,7 +71,9 @@
 // alert('Вы получите:' + ' ' + Math.floor(moneyAmount / chocPrice) + ' ' + 'шоколадки(-ок)' + ' ' + 'и' + ' ' + (moneyAmount - (Math.floor(moneyAmount / chocPrice) * chocPrice)).toFixed(2)  + 'грн сдачи.');
 
 // 9
-// Не знаю как это реализовать с помощью оператора %
+// const enterNumb = prompt("Введите 3-х значное число");
+
+// alert((enterNumb % 10) + '' +(Math.floor(enterNumb / 10)) % 10 + '' + Math.floor(enterNumb / 100));
 
 // 10
 const moneyAmount = prompt("Какую сумму вы хотите внести в банк?");
