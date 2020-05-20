@@ -55,8 +55,8 @@ const enterNumb = prompt("Введите 3-х значное число");
 alert((enterNumb % 10) + '' +(Math.floor(enterNumb / 10)) % 10 + '' + Math.floor(enterNumb / 100));
 
 // 10
-const moneyAmount = prompt("Какую сумму вы хотите внести в банк?");
+const moneyQty = prompt("Какую сумму вы хотите внести в банк?");
 
 const monthQty = prompt("На сколько месяцев вы хотите положить данную сумму?");
 
-alert('За' + ' ' + monthQty + ' ' + 'месяца(-ов) вы заработаете:' + ' ' + (moneyAmount / 100 * ((5 / 12) * monthQty)).toFixed(2) + 'грн');
+alert('За' + ' ' + monthQty + ' ' + 'месяца(-ов) вы заработаете:' + ' ' + (moneyQty / 100 * ((5 / 12) * monthQty)).toFixed(2) + 'грн');
