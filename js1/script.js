@@ -8,7 +8,9 @@ const currentYear = 2020;
 
 const currentAge = prompt("Сколько вам лет?");
 
-alert('Ваш год рождения: ' + ' ' + 2020 - currentAge);
+const birthYear = (currentYear - currentAge);
+
+alert(`Ваш год рождения: ${birthYear}`);
 
 // 3
 const boxSide = prompt("Скольки см равна одна из сторон квадрата?");
