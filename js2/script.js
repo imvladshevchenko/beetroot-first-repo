@@ -176,7 +176,6 @@
 let day = +prompt('Укажите день');
 let month = +prompt('Укажите месяц');
 let year = +prompt('Укажите год');
-
 let leapYear = true;
 
 if (Number.isInteger(year / 400) || Number.isInteger(year / 4) && (year % 100 != 0)) {
@@ -186,13 +185,19 @@ else {
   leapYear = false;
 }
 
-if (day === 28 && month === 02 && leapYear == true ) {
+if (day == 28 && month == 02 && leapYear == true ) {
   alert('Следующая дата: ' + ' ' + (day + 1) + '.' + month + '.' + year);
 }
-else if (day == 30 && month == 3,5,7,8,11) {
+else if (day == 28 && month == 2 && leapYear == false) {
   alert('Следующая дата: ' + ' ' + 1 + '.' + (month + 1) + '.' + year);
 }
-else if (day == 31 && month == 1,4,6,9,10) {
+else if (day == 29 && month == 2) {
+  alert('Следующая дата: ' + ' ' + 1 + '.' + (month + 1) + '.' + year);
+}
+else if (day == 30 && (month == 3 || month == 5 || month == 7 || month == 8 || month == 11)) {
+  alert('Следующая дата: ' + ' ' + 1 + '.' + (month + 1) + '.' + year);
+}
+else if (day == 31 && (month == 1 || month == 4 || month == 6 || month == 9 || month == 10)) {
   alert('Следующая дата: ' + ' ' + 1 + '.' + (month + 1) + '.' + year);
 }
 else if (day == 31 && month == 12) {
