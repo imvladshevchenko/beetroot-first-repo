@@ -162,14 +162,37 @@
 
 // 9
 
-let firstNumber = [2,3,4,5,6,7,8,9];
-let secondArr = [1,2,3,4,5,6,7,8,9,10];
-let arr = [];
+// let firstNumber = [2,3,4,5,6,7,8,9];
+// let secondArr = [1,2,3,4,5,6,7,8,9,10];
+// let arr = [];
 
-for (let firstNumber = 2; firstNumber < 10; firstNumber++) {
-  for (let secondNumber = 1; secondNumber < 11; secondNumber++) {
-    arr.push(` ${firstNumber}*${secondNumber}=` + firstNumber * secondNumber);
+// for (let firstNumber = 2; firstNumber < 10; firstNumber++) {
+//   for (let secondNumber = 1; secondNumber < 11; secondNumber++) {
+//     arr.push(` ${firstNumber}*${secondNumber}=` + firstNumber * secondNumber);
+//   }
+// }
+
+// alert(arr);
+
+// 10
+
+alert('Загадайте число от 1 до 100');
+let minimal = 0;
+let maximal = 100;
+let number = 50;
+
+while (number != 0) {
+  let sign = prompt(`Загаданное вами число меньше ${number} (<), больше (>) или равно ${number} (=), ответ указать в виду символа (<,>,=)`);
+  if (sign == '<') {
+    maximal = number;
+    number = Math.ceil(number / 2);
+  }
+  if (sign == '>') {
+    minimal = number;
+    number = (Math.ceil((maximal - minimal)/2 + number));
+  }
+  else if (sign == '=') {
+    alert(`Ваше загаданное число: ${number}`);
+    break;
   }
 }
-
-alert(arr);
