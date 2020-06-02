@@ -13,14 +13,21 @@
 
 // 2
 
-//Не решено//
+// let firstNumber = +prompt('Укажите первое число, для нахождения НОД');
+// let secondNumber = +prompt('Введите вторую цифру');
 
-// let numberFirst = +prompt('Укажите первое число');
-// const numberSecond = +prompt('Укажите второе число');
-// const firstHalf = numberFirst / 2;
-// const secondHalf = numberSecond / 2;
-// let number = 0;
-// for (numberFirst; number <= firstHalf; numberFirst / number++)
+// while (firstNumber != 0) {
+//   if (firstNumber > secondNumber) {
+//     firstNumber = firstNumber % secondNumber;
+// } 
+//   else {
+//     secondNumber = secondNumber % firstNumber;
+// };
+// };
+
+// let answer = firstNumber + secondNumber;
+
+// alert(` Наибольший общий делитель ваших чисел: ${answer}`);
 
 //3
 
@@ -185,7 +192,7 @@ while (number != 0) {
   let sign = prompt(`Загаданное вами число меньше ${number} (<), больше (>) или равно ${number} (=), ответ указать в виду символа (<,>,=)`);
   if (sign == '<') {
     maximal = number;
-    number = Math.ceil(number / 2);
+    number = (Math.ceil((maximal - minimal)/2 + minimal));
   }
   if (sign == '>') {
     minimal = number;
@@ -196,3 +203,4 @@ while (number != 0) {
     break;
   }
 }
+
