@@ -1,0 +1,90 @@
+$styles: gallery;
+.#{$styles} {
+    padding-top: 181px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 44px;
+        font-family: $gothammedium;
+        color: #2c4058;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 100px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+        }
+    }
+    &__imgs-wrapper {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    &__big-img-wrapper {
+        margin-right: 10px;
+    }
+    &__item1, &__item3 {
+        margin-right: 10px;
+    }
+    &__small-img-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__top-img-wrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__bottom-img-wrapper {
+        display: flex;
+    }
+    &__link {
+        font-family: $gothambook;
+        font-size: 14px;
+        color: #2c4058;
+        padding: 20px 58px;
+        border: 1px solid #2c4058;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 140px;
+        &:hover {
+            border: transparent solid 1px;
+            transition: all 0.5s ease;
+            color: #2c4058;
+          }
+    }
+}
+
+
+.gallery__item1, .gallery__item2, .gallery__item3, .gallery__item4, .gallery__big-img-wrapper{
+position: relative;
+cursor: pointer;
+  &::after {
+content: "";
+display: none;
+background: url(../img/360.png) no-repeat center;
+width: 80px;
+height: 80px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+&:hover {
+    transition: all 0.5s ease-in-out;
+    &:after {
+display: block;
+
+    }
+}
+}
+

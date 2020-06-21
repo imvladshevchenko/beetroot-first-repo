@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+body {
+    font-size: 100%;
+}
+
+.header {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+.header__slider {
+    display: flex;
+    flex: 1;
+}
+
+.header__list {
+    display: flex;
+    flex: 1;
+}
+
+.header__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/aziz-acharki-boIJluEJEPM-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.header__list-item:nth-child(2) {
+    background: url("../img/aziz-acharki-y44xv-A5syg-unsplash.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.header__list-item:nth-child(3) {
+    background: url(../img/safar-safarov-7n08ciW6Wro-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header__text {
+    max-width: 400px;
+    text-align: center;
+}
+
+.header__dots {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.header__dots li:not(:last-child) {
+    margin-bottom: 15px;
+
+}
+
+.header__dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.header__dots .uk-active {
+    border: 1px solid white;
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    font-size: 100%;
+  }
+  
+
+  .uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+
+/*uikit*/
+address, dl, fieldset, figure, ol, p, pre, ul {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+div#map a,
+div#map button,
+div.gm-bundled-control div.gmnoprint {
+    display: none !important;
+}

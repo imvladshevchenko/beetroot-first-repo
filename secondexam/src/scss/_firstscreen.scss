@@ -1,0 +1,205 @@
+$styles: first-screen;
+.#{$styles} {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+    
+    .container {
+        position: relative;
+        min-width: 100%;
+        height: 100vh;
+        padding-top: 53px;
+    }
+    &__navigation {
+        display: flex;
+        min-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__logo-wrapper {
+        margin-right: 112px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__list-item {
+        margin-right: 91px;
+    }
+    &__nav {
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $gothambook;
+        font-size: 14px;
+        color: white;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -21px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            border: 1px solid white;
+
+        }
+        &:hover {
+            &:before {
+              background-color: white;
+              transition: all 0.2s ease;
+            }
+          }
+    }
+    &__links-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__links-item {
+        list-style: none;
+ 
+
+    }
+    &__link {
+        font-size: 16px;
+        color: #ffffff;
+        display: block;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        &:hover {
+            border: 1px solid transparent;
+            transition: all 0.5s ease;
+          }
+        
+
+    }
+    .link-item {
+        left: 14px;
+    }
+    &__links-item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__title {
+        font-family: $gothambold;
+        font-size: 80px;
+        letter-spacing: 4px;
+        color: white;
+        margin-bottom: 39px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-family: $gothambook;
+        font-size: 18px;
+        letter-spacing: 5.4px;
+        color: white;
+        text-transform: uppercase;
+    }
+    &__title-wrapper {
+        position: absolute;
+        min-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__scroll-down {
+        position: absolute;
+        z-index: 10;
+        bottom: 49px;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        img {
+            width: 10px;
+            height: 6px;
+        }
+        &:hover {
+            border: 1px solid transparent;
+            transition: all 0.5s ease;
+          }
+        
+    }
+}
+.slider-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.slider {
+    min-width: 100%;
+    min-height: 100vh;
+}
+.slider__item {
+    min-width: 100%;
+}
+.item1 {
+    background: url(../img/header-bg-gradient.jpg) center no-repeat;
+    background-size: cover;
+}
+.item2 {
+    background: url(../img/zdanie_vid_snizu_arhitektura_137106_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item3 {
+    background: url(../img/skaly_poberezhe_more_174397_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item4 {
+    background: url(../img/zdanie_arhitektura_vid_snizu_174390_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item5 {
+    background: url(../img/zdaniia_arhitektura_neboskreby_174379_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.dots {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.dots li > a{
+    border: 1px solid white;
+}
+.dots > li:not(:last-child) {
+margin-bottom: 40px;
+outline: none;
+}
+.dots .uk-active > a{
+background-color: white;
+
+}
+
+.uk-dotnav>*>:focus, .uk-dotnav>*>:hover {
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid white;
+}
